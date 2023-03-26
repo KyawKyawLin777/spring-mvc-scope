@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/masterLayout :: layout(~{::main})}" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<body>
+<main role="main">
+  <div class="container bg-light mt-5 p-5">
+    <div th:replace="fragment/servlet-context-info.html :: servletContext"></div>
+    <div th:replace="fragment/request-scope-form.html :: requestForm"></div>
+    <div th:replace="fragment/session-scope-from.html :: sessionForm"></div>
+    <div th:replace="fragment/application-scope-from.html :: applicationForm"></div>
+  </div>
+</main>
+
+</body>
+</html>
